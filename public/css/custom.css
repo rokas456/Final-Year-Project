@@ -1,0 +1,52 @@
+footer{
+	background-color:#333;
+	color:#e6e6e6;
+}
+
+.glyphicon{
+
+	color: #33cc33;
+}
+
+#submitFeed{
+
+	background: #33cc33;
+}
+
+#ScrollStyle, #selectMachineryProcess, #selectMachineryPlant{
+	max-height: 410px;
+    overflow-y: scroll;
+}
+
+#cursored{
+	cursor:pointer;
+}
+
+.breadcrumb{
+	height:450px;
+	overflow-y: scroll;
+}
+
+#colorG{
+	color:black;
+}
+
+input:focus, textarea:focus{
+	background-color: #f5f5dc;
+	color:green;
+}
+
+tr:hover{
+	background-color:#333;
+	cursor:pointer;
+	color:white;
+}
+
+/*#page-wrapper{
+	background: #F7E7CE;
+}*/
+
+/*#backg{
+	background-image: url("http://localhost:8080/PharmaMachinery/public/images/background.jpg");
+	background-repeat: no-repeat;
+}*/
