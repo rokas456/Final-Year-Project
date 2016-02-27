@@ -20,11 +20,11 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <h1 class="page-header">
-                           View Processes
+                           Input Process Info
                             <small>Choose Plant</small>
                         </h1>
                         <ol class="breadcrumb">
-                            <h2>Select Plant</h2>
+                            <h2 id="customFontStyle">Select Plant</h2>
                              <div id="realTimeMachinery"></div>
                                  <br /> 
                                 <select size="10"  class="form-control" id="selectPlantProcess" onchange="checkPlant(this.value)">
@@ -36,8 +36,8 @@
 
                     <div class="col-lg-6">
                         <h1 class="page-header">
-                           
-                            <small>Choose Machinery<span id="colorG" class="glyphicon glyphicon-share" style="float:right"></span></small>
+                           <span class="glyphicon glyphicon-upload" style="float:right" id="colorG"></span>
+                            <small>Choose Machinery</small>
                          </h1>
                         <ol class="breadcrumb">
                             <h2><span id="LoadMachinery">Load Machinery </span></h2>
@@ -45,7 +45,7 @@
                             <div id="realTime"></div>
 
                             <br />
-                            <a href="http://localhost:8080/PharmaMachinery/retrievalProcess/showProcess"><button id="pButton" type="submit" class="btn btn-success" style="margin-left:600px; margin-top:20px"  disabled>View Processes</button></a>
+                            <a href="http://localhost:8080/PharmaMachinery/input/showProcess"><button id="pButton" type="submit" class="btn btn-success" style="margin-left:600px; margin-top:20px"  disabled>View Processes</button></a>
 
                         </ol> 
                        

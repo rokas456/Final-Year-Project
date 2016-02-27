@@ -4,7 +4,8 @@ class Session
 {
 	
 	public static function init()
-	{
+	 {	///session_cache_limiter('private, must-revalidate');
+	// 	session_cache_expire(60);
 		@session_start();
 	}
 	

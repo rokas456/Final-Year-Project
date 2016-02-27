@@ -24,7 +24,7 @@
                             Create Plant
                             <small>Create machinery for <?php echo $_SESSION['pName']?></small>
                         </h1>
-                        <ol class="breadcrumb">
+                        <ol class="breadcrumb" >
 
                             <h2>Add Machinery</h2>
                             <!-- <form class="form-group form-group-md" action="createPlant/createMachinery" method="post" name="plantForm"> -->
@@ -43,7 +43,7 @@
             				<input type="date" name="bday" id="maintananceDate">                
 
                             <br/> <br/>
-                            <button type="submit" class="btn btn-primary" id="formSubmit">Add Machinery</button>
+                            <button type="submit" class="btn btn-primary" id="addMachinerySubmit">Add Machinery</button>
                             <a href="<?php echo URL;?>/CreatePlant/createProcess"><button type="submit" class="btn btn-success" >Next</button></a>
 
                              <!-- </form>-->
@@ -60,7 +60,7 @@
                             <small>Machinery</small>
                         </h1>
                         <ol class="breadcrumb">
-                            <div id="response" style="color:red; height:300px; width:500px; border:2px solid red;"></div>
+                            <div id="response" style="color:red; height:300px; width:400px; border:2px solid red;"></div>
                      </div>
 
 

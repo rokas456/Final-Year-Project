@@ -25,4 +25,11 @@ class retrievalMachinery extends Controller {
 		$this->model->retrievePlants();
 
 	}
+
+	function retrievalMachinerySubparts()
+	{	
+		$this->model->retrieveMachSubparts();
+
+	}
+	
 }

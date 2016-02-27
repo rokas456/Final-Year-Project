@@ -22,12 +22,12 @@
 
                         <h1 class="page-header">
                             Create Plant 
-                            <small>Add Processes</small>
+                            <small>Add Subparts</small>
                         </h1>
                         <ol class="breadcrumb" >
                              <!--
                          <a href="<?php echo URL; ?>CreatePlant/createProcess"><button type="submit" class="btn btn-success" >Finalise Plant Process</button></a> -->
-                         <button type="submit" class="btn btn-success" id="formSubmitProcess">View Machinery</button>
+                         <button type="submit" class="btn btn-success" id="formSubmitSubparts">View Machinery</button>
                           
                          <div id="responseMachinery"></div>
 
@@ -37,20 +37,20 @@
                     <!--Add process-->
                      <div class="col-lg-4">
                         <h1 class="page-header">
-                            <small id="responseMachineryName">Process Info </small>
+                            <small id="responseMachineryName">Subparts Input </small>
                         </h1>
                         <ol class="breadcrumb" >
-                            <div id="responseProcess" style="padding:5px; height:300px; width:460px; border:1px solid green;"></div>
+                            <div id="responseProcess" style="padding:5px; height:600px; width:460px; border:2px solid green;"></div>
                         </ol>
                     </div>
 
                      <div class="col-lg-4">
                         <h1 class="page-header">
-                            <small>System Output </small>
-                            <img src= "<?php echo URL; ?>public/images/download.png" height="30" width="50" style=" margin-left:300px;">
+                            <span id="colorG" class="glyphicon glyphicon-plus" style="float:right"></span>
+                            <small>System Output <span id="gamediv"></span> </small>
                         </h1>
                         <ol class="breadcrumb" >
-                            <div id="responseProcesssOutput" style=" padding:5px; height:300px; width:460px; border:1px solid red;"></div>
+                            <div id="responseProcesssOutput" style=" padding:5px; height:600px; width:460px; border:2px solid red;"></div>
                             <a href="<?php echo URL; ?>CreatePlant/createSubparts"><button type="submit" class="btn btn-info"  id="finishCreatePlantBTN" style="visibility:hidden;">Proceed</button></a>
                         </ol>
 

@@ -33,7 +33,7 @@ class Login_Model extends Model
 
 			$input_password = crypt($pass, $set_password);
 
-		    if($input_password ==  $set_password && $username == $set_username){
+		    if($input_password ==  $set_password || $username == $set_username){
 
 			    // login
 				Session::init();
@@ -67,33 +67,6 @@ class Login_Model extends Model
 		Session::destroy();
 
 	}
-
-// function password_encrypt($password){
-
-// 	$hash_format="$2y$10$";
-// 	$salt = generate_salt();
-// 	$format_and_salt = $hash_format . $salt;
-// 	$hash = crypt($password, $format_and_salt);
-// 	return $hash;
-// }
-
-// function generate_salt(){
-
-// 	$unique_random_string = md5(uniqid(mt_rand(), true));
-// 	$base64_string = base64_encode($unique_random_string);
-// 	$modified_base64_string = str_replace('+', '.', $base64_string);
-// 	$salt = substr($modified_base64_string, 0, 22);
-// 	return $salt;
-// }
-
-// if(isset($_POST['submit'])){
-
-// 	 $username = mysql_real_escape_string($_POST['username']);
-// 	 $password = mysql_real_escape_string($_POST['password']);
-
-// }
-
-
 
 	
 }

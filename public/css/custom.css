@@ -23,8 +23,26 @@ footer{
 }
 
 .breadcrumb{
-	height:450px;
+	height:580px;
 	overflow-y: scroll;
+}
+
+#footerContact{
+	cursor:pointer;
+}
+
+#footerContact:hover{
+	color:yellow;
+}
+
+#finishCreatePlantBTN{
+	float: right;
+	margin-top:10px;
+}
+
+#finalBtnStyle{
+
+	margin-left:15px;
 }
 
 #colorG{
@@ -42,6 +60,22 @@ tr:hover{
 	color:white;
 }
 
+a{
+	cursor:pointer;
+}
+
+#contactTitle{
+	color:black;
+	text-align: center;
+	padding:0px;
+	margin:0px;
+}
+
+#contactGlyphStyle{
+	color:black;
+	padding:0px;
+	margin:0px;
+}
 /*#page-wrapper{
 	background: #F7E7CE;
 }*/
@@ -50,3 +84,15 @@ tr:hover{
 	background-image: url("http://localhost:8080/PharmaMachinery/public/images/background.jpg");
 	background-repeat: no-repeat;
 }*/
+/* Custom Fonts */
+h2{
+	font-family: 'Lora', serif;
+}
+
+h1{
+	font-family: 'PT Serif', serif;
+}
+
+#processInputFirst{
+	height:750px;
+}

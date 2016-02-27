@@ -20,31 +20,28 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Add Plant <span id="colorG" class="glyphicon glyphicon-plus" style="float:right"></span>
-                            <small>Create Plant</small>
+                            Process Feedback
+                            <small><span id="colorG" class="glyphicon glyphicon-comment" style="float:right"></small>
                         </h1>
                         <ol class="breadcrumb">
 
-                            <h2>Add Plant</h2>
-                            <form class="form-group form-group-md" action="<?php echo URL; ?>CreatePlant/createPlant" method="post" name="plantForm">
-            				<div class="form-group">
-            				<input type="text" placeholder="Plant Name" name="plantName" class="form-control"/>      
-                            <br /><br />
-                            <textarea rows="5" cols="80" id="comment" placeholder="Plant Description" name="plantDescription" class="form-control"></textarea>          
+                            <div class="well" id="commentProcessOutput">
+<!--                             <div class="well well-sm" style="width:200px; "><b>Rokas - Process</b></div>
+                            <p class="well well-lg">Feedback from user 1 Feedback from user Feedback from user <div class="well well-sm" style="width:200px; margin-left:1340px">Date: 24/12/2016 </div></p> -->
+							
+                            </div>
 
-                            <br/> <br/>
-                            <button type="submit" class="btn btn-primary" style="float:right">Next</button>
-                             </div>
-                             </form>
+
                         </ol>
                     </div>
-                </div>
                 <!-- /.row -->
 
             </div>
             <!-- /.container-fluid -->
 
         </div>
+    </div>
+
         <!-- /#page-wrapper -->
 
   <?php include("views/loginStyles/footer.php"); ?>

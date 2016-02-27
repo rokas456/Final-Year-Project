@@ -1,6 +1,6 @@
 <?php
 
-class processInfo_Model extends Model
+class status_Model extends Model
 {
 	public function __construct()
 	{

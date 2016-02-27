@@ -12,7 +12,12 @@ class retrievalProcess extends Controller {
 		$this->model->index();
 
 	}
+// Retrives subparts
+	function retriveSubparts()
+	{	
+		$this->model->retriveSubparts();
 
+	}
 
 	function showProcess()
 	{	
@@ -26,5 +31,11 @@ class retrievalProcess extends Controller {
 		$this->model->showProcessDatas();
 
 	}
+
+	public function retrieveMachSubparts()
+	{		
+		$this->model->retrieveMachSubparts();
+
+ 	}
 }
 

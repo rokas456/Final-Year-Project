@@ -11,7 +11,7 @@
             <!-- /.navbar-collapse -->
         </nav>
 
-        <div id="page-wrapper">
+ <div id="page-wrapper">
 
 
             <div class="container-fluid">
@@ -20,22 +20,16 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Add Plant <span id="colorG" class="glyphicon glyphicon-plus" style="float:right"></span>
-                            <small>Create Plant</small>
+                            <span id="colorG" class="glyphicon glyphicon-print" style="float:right"></span>
+                            Download Data
+                            <small>Download File for </small>
                         </h1>
                         <ol class="breadcrumb">
 
-                            <h2>Add Plant</h2>
-                            <form class="form-group form-group-md" action="<?php echo URL; ?>CreatePlant/createPlant" method="post" name="plantForm">
-            				<div class="form-group">
-            				<input type="text" placeholder="Plant Name" name="plantName" class="form-control"/>      
-                            <br /><br />
-                            <textarea rows="5" cols="80" id="comment" placeholder="Plant Description" name="plantDescription" class="form-control"></textarea>          
+                            <h2>Click download to download the file</h2>
+                            <a href="<?php echo URL; ?>download"><button type="button" class="btn btn-default">Back</button></a>
+                            <a href="<?php echo URL; ?>download/downloadData"><button type="button" class="btn btn-success">Download</button></a>
 
-                            <br/> <br/>
-                            <button type="submit" class="btn btn-primary" style="float:right">Next</button>
-                             </div>
-                             </form>
                         </ol>
                     </div>
                 </div>

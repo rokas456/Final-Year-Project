@@ -20,22 +20,16 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">
-                            Add Plant <span id="colorG" class="glyphicon glyphicon-plus" style="float:right"></span>
-                            <small>Create Plant</small>
+                            Charts
+                            <small>Select Plant<span id="colorG" class="glyphicon glyphicon-comment" style="float:right"></small>
                         </h1>
-                        <ol class="breadcrumb">
-
-                            <h2>Add Plant</h2>
-                            <form class="form-group form-group-md" action="<?php echo URL; ?>CreatePlant/createPlant" method="post" name="plantForm">
-            				<div class="form-group">
-            				<input type="text" placeholder="Plant Name" name="plantName" class="form-control"/>      
-                            <br /><br />
-                            <textarea rows="5" cols="80" id="comment" placeholder="Plant Description" name="plantDescription" class="form-control"></textarea>          
-
-                            <br/> <br/>
-                            <button type="submit" class="btn btn-primary" style="float:right">Next</button>
-                             </div>
-                             </form>
+                        <ol class="breadcrumb">      
+                             <div id="realTimeMachinery"></div>
+                                 <br /> 
+                                <select size="10"  class="form-control" id="selectPlantProcess" onchange="checkPlant(this.value)">
+                                </select>
+                                <br />
+                               <a href="<?php echo URL; ?>charts/chartss"><button type="submit" class="btn btn-primary" style="float:right" id="testGraph">Show Graph</button></a>
                         </ol>
                     </div>
                 </div>

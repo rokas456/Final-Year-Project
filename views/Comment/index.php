@@ -37,7 +37,7 @@
                             <button type="submit" class="btn btn-success">Upload</button>
 <!--                             <a href="processFeed.php">View Process Feedback</a> -->
                            
-                             <a href="<?php echo URL; ?>Comment/ViewComments"><button type="submit" class="btn btn-default">View Process Feedback</button></a>
+                             <a href="<?php echo URL; ?>Comment/ViewProcessFeedback"><button type="submit" class="btn btn-default">View Process Feedback</button></a>
                               <a href="<?php echo URL; ?>Comment/ViewComments"><button type="submit" class="btn btn-default">View Comments</button></a>
                         </ol>
                     </div>

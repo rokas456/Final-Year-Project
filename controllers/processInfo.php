@@ -17,10 +17,7 @@ class ProcessInfo extends Controller {
 	{
 		$this->view->render('processInfo/processInfo3');
 		$this->model->processInfo3();
-	}
-
-
-	
+	}	
 
 }
 

@@ -10,12 +10,6 @@ class createPlant_Model extends Model
 		@session_start();
 	}
 
-	public function run()
-	{
-		
-}
-
-
 
 	public function createPlant()
 	{
@@ -53,7 +47,44 @@ class createPlant_Model extends Model
 
 
 
- 	public function createProcessFinal()
+ 	public function createSubpart()
+	{
+		$sName = $_POST['sName'];
+		$sDescritpion = $_POST['sDesc'];
+		$sManufacturer = $_POST['sManufacturer'];
+		$sAquiry = $_POST['sAquired'];
+		$sExpiry = $_POST['sExpired'];
+		$m_ID = $_POST['sMachName'];
+
+
+		$stmt2 = $this->db->prepare('SELECT id FROM machinery WHERE name = :machineName ');
+		$stmt2->execute(array(
+			':machineName' =>  $m_ID
+
+		));
+
+		$data = $stmt2->fetchAll();
+
+		foreach($data as $value){
+			$set_id =  $value['id'];
+			}
+		
+		$stmt = $this->db->prepare('INSERT INTO subparts(mach_id, name, description, manufacturer, aquired_date, expired_date)
+						VALUES(:m_id, :sName, :sDesc, :sManu, :sAquired, :sExpired)');
+
+		$stmt -> bindValue('sName', $sName);
+		$stmt -> bindValue('sDesc', $sDescritpion);
+		$stmt -> bindValue('sManu', $sManufacturer);
+		$stmt -> bindValue('sAquired', $sAquiry);
+		$stmt -> bindValue('sExpired', $sExpiry);
+		$stmt -> bindValue('m_id', $set_id);
+
+		$stmt -> execute();
+		echo "Subpart for machinery ".$m_ID ." with the following details has been created<br />".' <br/> Name: '.$sName. '<br />Description: '. $sDescritpion.
+		'<br/> Manufacturer: '.$sManufacturer.'<br/> expired: '.$sAquiry.'<br/> Expiry: '.$sExpiry;
+ }
+
+  	public function createProcessFinal()
 	{
 		$pName = $_POST['pName'];
 		$pDesc = $_POST['pDesc'];

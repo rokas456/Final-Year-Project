@@ -24,14 +24,20 @@ class CreatePlant extends Controller {
 		$this->model->createMachinery();
 	}
 
-	
+	function createSubparts()
+	{
+		$this->view->render('createPlant/addProcessSubparts');
+	}
 
 	function createProcess()
 	{
 		$this->view->render('createPlant/addProcess3');
 	}
 	
-
+	function createSubpartFinal()
+	{
+		$this->model->createSubpart();
+	}
 	// function displayMachinery()
 	// {
 	// 	$this->model->displayMachinery();

@@ -24,15 +24,15 @@ echo'
                     </li>
                     
                     <li>
-                        <a href="inputData.php"><span class="glyphicon glyphicon-upload"></span> Input Process Info</a>
+                        <a href="http://localhost:8080/PharmaMachinery/input"><span class="glyphicon glyphicon-upload"></span> Input Process Info</a>
                     </li>
 
                     <li>
-                        <a href="viewChart.php"><span class="glyphicon glyphicon-signal"></span> View Bar Charts</a>
+                        <a href="http://localhost:8080/PharmaMachinery/charts"><span class="glyphicon glyphicon-stats"></span> View Bar Charts</a>
                     </li>
 
                     <li>
-                        <a href="downloadData.php"><span class="glyphicon glyphicon-print"></span> Download Data</a>
+                        <a href="http://localhost:8080/PharmaMachinery/download"><span class="glyphicon glyphicon-print"></span> Download Data</a>
                     </li>
 
                     <li>
@@ -40,7 +40,7 @@ echo'
                     </li>
 
                     <li>
-                        <a href="chat.php"><span class="glyphicon glyphicon-signal"></span> Performance</a>
+                        <a href="http://localhost:8080/PharmaMachinery/status"><span class="glyphicon glyphicon-signal"></span> Performance</a>
                     </li>
 
                     <li>

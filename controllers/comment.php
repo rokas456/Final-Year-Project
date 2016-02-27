@@ -15,8 +15,15 @@ class Comment extends Controller {
 	{	
 		$this->view->render('Comment/processFeedback');
 	}
-	
+	function ViewProcessFeedback() 
+	{	
+		$this->view->render('Comment/commentFeedback');
+	}
 
+	function retrieveProcessFeedback() 
+	{	
+		$this->model->retrieveProcessFeedback();
+	}
 }
 
 ?>
